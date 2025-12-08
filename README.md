@@ -1,5 +1,4 @@
 # IDS Project
-
 This project implements a **real-time Intrusion Detection System (IDS)** using Python. It captures network packets using **Scapy**, calculates statistics and flow features, and performs predictions with machine learning models.  
 
 The system is **[multithreaded](https://www.freecodecamp.org/news/build-a-real-time-intrusion-detection-system-with-python/)**, allowing it to sniff network packets while simultaneously computing flow statistics and performing predictions.
