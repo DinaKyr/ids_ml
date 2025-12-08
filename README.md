@@ -16,7 +16,7 @@ The models were trained using the **Network Intrusion [Dataset](https://www.kagg
 - The Python implementation currently uses the **MLP model only**.  
 - **Feature selection** was done using **Permutation Importance**.  
 - **9 features** were selected based on permutation importance (for MLP only) and computational efficiency, ensuring real-time performance while sniffing packets with Scapy.
-- Classification problem, categorizing packages in 0:(normal trafic) or 1:(abnormal)
+- Classification problem, categorizing packages in 0:(normal traffic) or 1:(abnormal)
 ---
 
 ## How it Works
