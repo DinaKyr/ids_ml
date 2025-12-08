@@ -13,7 +13,8 @@ The models were trained using the **Network Intrusion [Dataset](https://www.kagg
   - **MLP (Multi-Layer Perceptron)**
   - **Random Forest (RF)**  
 - The Python implementation currently uses the **MLP model only**.  
-- **Feature selection** was done using **Permutation Importance**.  
+- **Feature selection** was done using **Permutation Importance**.
+- **Scaling** was done using target encoder for the service feature, and one hot encoder for flags and protocol_type features.
 - **9 features** were selected based on permutation importance (for MLP only) and computational efficiency, ensuring real-time performance while sniffing packets with Scapy.
 - Classification problem, categorizing packages in 0:(normal traffic) or 1:(abnormal)
 ---
@@ -42,7 +43,7 @@ python -m src.main
 ## Example output
 
 ![IDS Screenshot](pictures/prtscr-ids.png)
-
+Where you can see the flow of the package (source ip, destination ip, sport , dport), the 9 selected features the model was trained on, the prediction and its probability.
 
 Notes
 
