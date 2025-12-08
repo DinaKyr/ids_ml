@@ -1,0 +1,45 @@
+# ───────── Python build/runtime files ─────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS / Windows OS junk
+.DS_Store
+Thumbs.db
+
+# ───────── Venv folders ─────────
+.conda/
+.env/
+
+# ───────── Project specific ─────────
+# You normally DON'T push raw datasets to GitHub
+archive/
+
+# Models — Ignore large trained model binaries
+src/models/
+*.h5
+*.pkl
+*.pt
+*.joblib
+
+# IDE / Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Bytecode caches
+*/__pycache__/
+
+
+# ───────── Build + distribution ─────────
+dist/
+build/
