@@ -19,7 +19,6 @@ Thumbs.db
 .env/
 
 # ───────── Project specific ─────────
-# You normally DON'T push raw datasets to GitHub
 archive/
 
 # Models — Ignore large trained model binaries
